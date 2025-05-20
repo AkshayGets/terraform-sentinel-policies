@@ -14,7 +14,7 @@ module "aws-functions" {
   source = "./aws-functions/aws-functions.sentinel"
 }
 
-policy "restrict-s3-bucket-policies" {
-  source = "./restrict-s3-bucket-policies.sentinel"
+policy "enforce-s3-encryption" {
+  source = "./enforce_s3_encryption.sentinel"
   enforcement_level = "hard-mandatory"
 }
